@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viagens.com</title>
+
+    <!-- importando icones -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- importando fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura&family=Langar&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- importando css -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/top-menu/top-menu.css" />
+    <link rel="stylesheet" href="style/main/main.css" />
+    <link rel="stylesheet" href="style/cards/cards.css" />
+    <link rel="stylesheet" href="style/footer/footer.css" />
+    <!-- importando js -->
+    <script src="scripts/utilitarios.js" defer></script>
+    <script src="scripts/manipula-elementos.js" defer></script>
+  </head>
+  <body>
+    <header class="header-Site">
+      <nav>
+        <ul class="menu">
+          <li onclick="ativaHospedagem()" id="hospedagem">
+            <i class="fa fa-bed"></i><a href="">Hospedagem</a>
+          </li>
+          <li id="voo" onclick="ativaVoo()">
+            <i class="fa fa-plane"></i> <a>Voos</a>
+          </li>
+          <li id="aluguelCarro" onclick="ativaAluguelCarro()">
+            <i class="fa fa-car"></i> <a>Aluguel de Carro</a>
+          </li>
+          <li id="cruzeiros" onclick="ativaCruzeiros()">
+            <i class="fa fa-ship"></i> <a>Cruzeiros</a>
+          </li>
+          <li id="atracoes" onclick="ativaAtracoes()">
+            <i class="fa fa-university"></i><a>Atrações</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <div class="selection">
+          <form class="form-busca">
+            <input
+              type="text"
+              id="inputBusca"
+              class="input-busca"
+              placeholder="Digite o nome de um produto para procurar"
+            />
+            <span><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+        <section class="AnimatedTitle">
+          <div id="cabecarioTipoViagem">
+            <h3 id="h3JavaScript">
+              Encontre ofertas em hospedagens, voos, alugueis de carro,
+              cruzeiros e muito mais...
+            </h3>
+            <p>De pousadas aconchegantes até viagens de turismo para Lua...</p>
+            `
+          </div>
+        </section>
+        <section>
+          <h3></h3>
+          <div id="listaCards"></div>
+        </section>
+      </div>
+      <div class="teste1">
+        <footer>
+          <h3>Duvidas? Ligue: 0800-880-5720</h3>
+          <div class="listasFooter">
+            <ul>
+              <li><a href="">Pergundas Frequentes</a></li>
+              <li><a href="">Relação com investidores</a></li>
+              <li><a href="">Formas de pagamento</a></li>
+              <li><a href="">Informações Coorporativas</a></li>
+              <li><a href="">Avisos Legais</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Centro de Ajuda</a></li>
+              <li><a href="">Trabalhe Conosco</a></li>
+              <li><a href="">Termos de Uso</a></li>
+              <li><a href="">Registrar Cartão pré-pago</a></li>
+              <li><a href="">Privacidade</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

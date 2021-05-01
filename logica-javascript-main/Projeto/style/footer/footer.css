@@ -1,0 +1,23 @@
+footer {
+    width: 100%;
+    background-color: var(--color-header);
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+}
+
+footer h3 {
+    margin:15px 0px 0px 135px;
+    font-size: 2rem;
+    font-family: 'Jura', sans-serif;
+}
+
+footer ul{
+    font-family: 'Jura', sans-serif;
+    font-size: 3rem;
+    margin:15px 0px 20px 135px;
+}
+
+.listasFooter {
+    display: flex;
+}

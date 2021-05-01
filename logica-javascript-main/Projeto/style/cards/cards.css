@@ -1,0 +1,68 @@
+#listaCards {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.card {
+    font-size: 3rem;
+    border: 1.5px solid black;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 230px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card img {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 98%;
+    height: 150px;
+}
+.card p {
+    width: 100%;
+}
+
+.card p:hover {
+    font-weight:bolder;
+    cursor: pointer;
+}
+
+.card b {
+    font-size: 2.5rem;
+    padding: 5px
+}
+
+.fa-shopping-cart {
+    color:var(--color-text);
+    cursor: pointer;
+    width: 100%;
+    background-color:var(--opposite-color);
+    text-align: center;
+    padding: 7px 0;
+    border-top: 1px solid black;
+}
+
+.fa-plus {
+    color: green;
+    cursor:pointer;
+    padding-bottom: 10px;
+}
+
+.fa-minus{
+    cursor:pointer;
+    color:red;
+    padding-bottom: 10px;
+}
+
+.fa-shopping-cart:hover {
+    color: var(--color-header);
+}
